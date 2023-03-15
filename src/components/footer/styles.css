@@ -1,0 +1,9 @@
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  left:calc(50% - 83.65px)
+}
+
+.footer-container > a > img {
+  height: 50px;
+}

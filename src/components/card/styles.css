@@ -1,0 +1,25 @@
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  min-height: 450px;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.card img {
+  width: 280px;
+  height: 210px;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.card > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.card > div span:nth-child(2) {
+  margin: 10px;
+}
