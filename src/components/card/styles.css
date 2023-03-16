@@ -23,3 +23,8 @@
 .card > div span:nth-child(2) {
   margin: 10px;
 }
+
+.card:hover{
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+}

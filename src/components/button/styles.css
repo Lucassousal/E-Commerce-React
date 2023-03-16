@@ -6,4 +6,10 @@
     color: #fff;
     border-radius: 5px;
     border: none;
+    cursor:pointer;
+}
+
+.button-add-to-card:hover{
+    opacity: 0.8;
+    transition: all ease-in-out 0.2s;
 }

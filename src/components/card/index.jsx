@@ -1,17 +1,16 @@
 import './styles.css'
 import {Button} from '../button'
-import img from '../../assets/images/americanas.png'
 
-export const Card = () => {
+export const Card = ({item}) => {
   return (
     <div className='card'>
-      <img src={img} alt="" />
+      <img src={item.images[0]} alt="" />
       <div>
-        <span>teste</span>
-        <span>teste</span>
-        <p>teset stesteghetebsxgsjsh</p>
+        <span>{item.title}</span>
+        <span>{item.price}</span>
+        <p>{item.description}</p>
       </div>
-      <Button/>
+      <Button title="Adicionar ao Carrinho" estado="success "/>
     </div>
   )
 }
