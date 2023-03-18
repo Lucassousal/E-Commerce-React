@@ -1,17 +1,14 @@
 import axios from "axios";
 
 const http = axios.create({
-  baseURL: "https://api.escuelajs.co/api/v1"
+  baseURL: "https://api.escuelajs.co/api/v1",
+  params: {
+    limit: 40,
+    offset:0
+  }
 })
 
-const api = {
-  
-  getProducts: async() => {
+export const getProducts = async() => {
     const { data } = await http.get('/products')
     return data
-
-  }
-
 }
-
-export default api

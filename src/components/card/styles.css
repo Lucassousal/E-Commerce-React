@@ -9,8 +9,8 @@
   flex-direction: column;
 }
 .card img {
-  width: 280px;
-  height: 210px;
+  max-width: 280px;
+  max-height: 210px;
   overflow-clip-margin: content-box;
   overflow: clip;
 }
