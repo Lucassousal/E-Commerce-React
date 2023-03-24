@@ -12,3 +12,8 @@ export const getProducts = async() => {
     const { data } = await http.get('/products')
     return data
 }
+
+export const getProduct = async (productId) => {
+  const { data } = await http.get(`/products/${productId}`)
+  return data
+}

@@ -10,7 +10,7 @@ export const Card = ({item}) => {
         <span>{item.price}</span>
         <p>{item.description}</p>
       </div>
-      <Button title="Adicionar ao Carrinho" estado="success "/>
+      <Button title="Adicionar ao Carrinho" id={item.id} estado="success "/>
     </div>
   )
 }

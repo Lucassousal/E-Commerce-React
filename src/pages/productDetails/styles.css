@@ -1,0 +1,43 @@
+.product-container{
+  display: flex;
+  margin-top: 80px;
+}
+.product-images{
+  padding: 20px;
+  max-width: 650px;
+}
+.product-infos{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.product-infos span {
+  font-size: 30px;
+  font-weight: 600;
+}
+.cep-container{
+  width: fit-content;
+  padding: 20px;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cep-container input {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #bbb;
+}
+
+.cep-container button{
+  margin-left: 10px;
+  padding: 14px;
+  background-color: #fff;
+  border: 2px solid #f80032;
+  border-radius: 10px;
+  color: #f80032;
+  cursor: pointer
+}
