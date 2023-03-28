@@ -1,5 +1,5 @@
 import { getProduct } from "../../services/api"
-import { Link, useLoaderData } from "react-router-dom"
+import { useLoaderData } from "react-router-dom"
 import { Header } from "../../components/header"
 import { Footer } from "../../components/footer"
 import { Carousel } from "react-responsive-carousel"
@@ -62,9 +62,7 @@ export const ProductDetails = () => {
                 <button>ok</button>
               </div>
             </div>
-            <Link to={'/cart'}>
-              <Button onClick={handleAddToCart} title="Adicionar ao Carinho" estado='sucess' />
-            </Link>
+            <Button onClick={handleAddToCart} title="Adicionar ao Carinho" estado='sucess' />
           </div>
         </div>
         <Footer/>
