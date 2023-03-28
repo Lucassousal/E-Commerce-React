@@ -14,3 +14,19 @@
     opacity: 0.8;
     transition: all ease-in-out 0.2s;
 }
+
+.btn-sucess{
+    background-color: green;
+}
+
+.btn-warning{
+    background-color: yellow;
+}
+
+.btn-danger{
+    background-color: red;
+}   
+
+.btn-details{
+    background-color: blue;
+}

@@ -1,7 +1,9 @@
 import './styles.css'
 import {Button} from '../button'
+import { Link } from 'react-router-dom'
 
 export const Card = ({item}) => {
+
   return (
     <div className='card'>
       <img src={item.images[0]} alt="" />
@@ -10,7 +12,9 @@ export const Card = ({item}) => {
         <span>{item.price}</span>
         <p>{item.description}</p>
       </div>
-      <Button title="Adicionar ao Carrinho" id={item.id} estado="success "/>
+      <Link to={`/${item.id}`}>
+        <Button title="Ver Detalhes" estado="details "/>
+      </Link>
     </div>
   )
 }
