@@ -1,13 +1,10 @@
 .button-add-to-card{
-    position: relative;
-    bottom: 0;
-    background-color: green;
-    height: 50px;
+    background-color: #f80032;
     color: #fff;
     border-radius: 5px;
     border: none;
     cursor:pointer;
-    padding: 0 45px;
+    padding: 10px 20px;
 }
 
 .button-add-to-card:hover{
@@ -15,18 +12,13 @@
     transition: all ease-in-out 0.2s;
 }
 
-.btn-sucess{
-    background-color: green;
+.btn-primary{
+    background-color: #f80032;
+
 }
 
-.btn-warning{
-    background-color: yellow;
-}
-
-.btn-danger{
-    background-color: red;
-}   
-
-.btn-details{
-    background-color: blue;
+.btn-secundary{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #f80032;
 }

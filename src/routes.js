@@ -8,7 +8,7 @@ import { CartPorvider } from './context/Cart-context';
 export const router = createBrowserRouter([
   {
     path:'/',
-    element:<App/>,
+    element:<CartPorvider><App/></CartPorvider>,
     errorElement:<div>Criar pagina de Erro</div>,
   },
   {

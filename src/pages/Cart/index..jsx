@@ -15,18 +15,26 @@ export const Cart = () => {
         <h2>Carrinho de Compras</h2>
         <div className='productItems-container'>
           {
-            cartItems &&
-            cartItems.map((item, index) => {
-              return(
-              <ProductItem key={index} item={item}/>
-              )
-            })
+            cartItems.length > 0 ?(
+              cartItems.map((item, index) => {
+                return(
+                <ProductItem key={index} item={item}/>
+                )
+              })
+            ) : (
+              <div className='no-products'> Não existe nenhum produto no carrinho </div>
+            )           
           }
-          <p>Total: R${handleSun(cartItems)},00</p>
-          <Button onClick={handleCleanCart} title='Limpar Carrinho' estado='danger'/>
+          {
+            cartItems.length > 0 &&
+            <>
+              <p>Total: R${handleSun(cartItems)},00</p>
+              <Button onClick={handleCleanCart} title='Limpar Carrinho' type='secundary'/>
+            </>
+          }
         </div>
         <Link to={'/'}>
-          <Button title='Voltar' estado='sucess'/>
+          <Button title='Voltar para Página Inicial' type='primary'/>
         </Link>
       </div>
   )

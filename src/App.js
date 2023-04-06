@@ -5,8 +5,6 @@ import { Card } from "./components/card";
 import { Footer } from "./components/footer";
 import Loading from "./components/loading/loading";
 
-import { CartPorvider } from "./context/Cart-context";
-
 import { getProducts } from "./services/api";
 
 import './App.css'
@@ -36,9 +34,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <CartPorvider>
-        <Header/>
-      </CartPorvider>
+      <Header/>
       {
         loading
         ?

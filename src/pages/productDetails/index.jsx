@@ -62,7 +62,7 @@ export const ProductDetails = () => {
                 <button>ok</button>
               </div>
             </div>
-            <Button onClick={handleAddToCart} title="Adicionar ao Carinho" estado='sucess' />
+            <Button onClick={handleAddToCart} title="Adicionar ao Carinho" type='primary' />
           </div>
         </div>
         <Footer/>
